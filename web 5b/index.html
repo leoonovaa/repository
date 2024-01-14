@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lab5b.js"></script>
+</head>
+
+<body>
+    <div style="margin-bottom: 50px;">
+        <h1>Площа трикутника за трьома сторонами за допомогою формули Герона:</h1>
+        <label for="side1A">Сторона A:</label>
+        <input type="text" id="side1A" placeholder="Введіть сторону A">
+        <label for="side1B">Сторона B:</label>
+        <input type="text" id="side1B" placeholder="Введіть сторону B">
+        <label for="side1C">Сторона C:</label>
+        <input type="text" id="side1C" placeholder="Введіть сторону C">
+        <button type="button" onclick="calculateAreaByHeron()">Виконати</button>
+        <p id="areaByHeronResult"></p>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <h1>Площа трикутника за двома сторонами і кутом між ними:</h1>
+        <label for="side2A">Сторона A:</label>
+        <input type="text" id="sidee2A" placeholder="Введіть сторону A">
+        <label for="side2B">Сторона B:</label>
+        <input type="text" id="side2B" placeholder="Введіть сторону B">
+        <label for="angle">Кут між сторонами:</label>
+        <input type="text" id="angle" placeholder="Введіть кут між ними">
+        <button type="button" onclick="calculateAreaByAngle()">Виконати</button>
+        <p id="areaByAngleResult"></p>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <h1>Площа трикутника за його стороною і висотою:</h1>
+        <label for="sidetriangle">Сторона трикутника:</label>
+        <input type="text" id="sidetriangle" placeholder="Введіть сторону трикутника">
+        <label for="heighttriangle">Висота трикутника:</label>
+        <input type="text" id="heighttriangle" placeholder="Введіть висоту трикутника">
+        <button type="button" onclick="calculateAreaBySideAndHeight()">Виконати</button>
+        <p id="areaBySideAndHeightResult"></p>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <h1>Площа трикутника за трьома сторонами і радіусом описаного кола:</h1>
+        <label for="side3A">Сторона A:</label>
+        <input type="text" id="side3A" placeholder="Введіть сторону A">
+        <label for="side3B">Сторона B:</label>
+        <input type="text" id="side3B" placeholder="Введіть сторону B">
+        <label for="side3C">Сторона C:</label>
+        <input type="text" id="side3C" placeholder="Введіть сторону C">
+        <label for="radius">Радіус описаного кола:</label>
+        <input type="text" id="radius" placeholder="Введіть радіус описаного кола">
+        <button type="button" onclick="calculateAreaBySideAndRadius()">Виконати</button>
+        <p id="areaBySideAndRadiusResult"></p>
+    </div>
+    <div  style="margin-bottom: 50px;">
+        <h1>Перевірка, чи число є паліндромом:</h1>
+        <label for="number">Число:</label>
+        <input type="text" id="number" placeholder="Введіть число">
+        <button type="button" onclick="checkNumberForPalindrome()">Перевірити</button>
+        <p id="numberForPalindromeResult"></p>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <h1>Перевірка, чи слово є анаграмою:</h1>
+        <label for="inputWord1">Перше слово:</label>
+        <input type="text" id="inputWord1" placeholder="Введіть перше слово">
+        <label for="inputWord2">Друге слово:</label>
+        <input type="text" id="inputWord2" placeholder="Введіть друге слово">
+        <button type="button" onclick="checkWordForAnagram()">Перевірити</button>
+        <p id="wordForAnagramResult"></p>
+    </div>
+    <div style="margin-bottom: 50px;">
+        <h1>Число у послідовності Фібоначі:</h1>
+        <label for="fibIndex">Порядковий номер:</label>
+        <input type="text" id="fibIndex" placeholder="Введіть орядковий номер">
+        <button type="button" onclick="getFibonacciNumber()">Знайти</button>
+        <p id="fibonacciNumberResult"></p>
+    </div>
+    <div>
+        <h1>Перевірка, чи число належить до послідовності Фібоначі:</h1>
+        <label for="checkFibNumber">Число:</label>
+        <input type="text" id="checkFibNumber" placeholder="Введіть число">
+        <button type="button" onclick="checkFibonacci()">Перевірити</button>
+        <p id="fibonacciResult"></p>
+    </div>
+</body>
+
+</html>
